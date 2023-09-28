@@ -4,7 +4,6 @@
 
 
 $(function () {
-
   // Dynamically create time blocks
   // What I need to know about each container
   // past, present, future are classes
@@ -39,6 +38,11 @@ $(function () {
     } else {
       hourText = hour + 'AM';
     }
+    
+    var hourDiv = $('<div>', {
+      class: 'col-2 col-md-1 hour text-center py-3',
+      text: hourText,
+    });
     hourDiv.text(hourText);
 
     // Create the textarea
